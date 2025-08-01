@@ -1,13 +1,8 @@
 #!/bin/bash
 #xfce4-genmon-now-playing
 #
-#Simple plugin that allows you to present playing music info in flat text mode and switch pause/play.
+#Simple plugin for XFCE4 Panel that allows you to present playing music info in flat text mode and switch pause/play.
 #https://github.com/rod-farias/xfce-genmon-now-playing
-#
-#Requirements:
-#  xfce4-genmon-plugin
-#  playerctl
-#  playerctd daemon working on background
 
 playerctl_status=$(playerctl status)
 if [[ $playerctl_status = 'Playing' || $playerctl_status = 'Paused' ]]; then
