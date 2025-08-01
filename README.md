@@ -30,4 +30,5 @@ Simple plugin that allows you to present playing music info in flat text mode an
     2. **Label**: Unchecked
     3. **Period (s)**: 1.00
     4. **Font**: Select a **monospaced** font, this is important. I use Noto Sans Mono 9.
+- You can change the width of the text block and the progress bar by modifying the values of *progress_bar_width* and *title_width* at the beginning of the script.
 
