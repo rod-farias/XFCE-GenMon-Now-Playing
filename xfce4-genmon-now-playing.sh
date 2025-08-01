@@ -7,7 +7,7 @@
 #Requirements:
 #  xfce4-genmon-plugin
 #  playerctl
-#  playerctd daemon working on background
+#  playerctld daemon working on background
 
 playerctl_status=$(playerctl status)
 if [[ $playerctl_status = 'Playing' || $playerctl_status = 'Paused' ]]; then
