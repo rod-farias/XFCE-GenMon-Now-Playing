@@ -20,7 +20,7 @@ Simple plugin that allows you to present playing music info in flat text mode an
 - XFCE environment.
 - [playerctl](https://github.com/altdesktop/playerctl). Probably it's already installed in your system, if not, `sudo apt install playerctl`.
 - [xfce4-genmon-plugin](https://docs.xfce.org/panel-plugins/xfce4-genmon-plugin/start) (`sudo apt install xfce4-genmon-plugin`).
-- Playerctl's demon must be working on background. To do this, add the command `playerctld daemon` to the list of processes that run automatically on login.
+- Playerctl's demon must be working on background. To do this, add the command `playerctld daemon` to the list of processes that run automatically on login. In order not to restart the system at this point, you can execute the command in a terminal and keep it open. The next time you start your session it will no longer be necessary.
 
 ## Installation
 
