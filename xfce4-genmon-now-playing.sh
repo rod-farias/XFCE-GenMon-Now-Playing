@@ -7,11 +7,11 @@
 #Requirements:
 #  xfce4-genmon-plugin
 #  playerctl
-#  playerctld daemon working on background
+#  playerctd daemon working on background
 
 playerctl_status=$(playerctl status)
 if [[ $playerctl_status = 'Playing' || $playerctl_status = 'Paused' ]]; then
-	progress_progress_bar_width=20
+	progress_bar_width=20
 	title_width=40
 	song_length=$(playerctl metadata mpris:length)
 	
@@ -29,8 +29,8 @@ if [[ $playerctl_status = 'Playing' || $playerctl_status = 'Paused' ]]; then
 		position=$(playerctl position)
 		position2=${position/.*/}
 		song_length2=${song_length::-6}
-		progress=$(($position2 * $progress_progress_bar_width / $song_length2))
-		remaind=$(($progress_progress_bar_width - $progress))
+		progress=$(($position2 * $progress_bar_width / $song_length2))
+		remaind=$(($progress_bar_width - $progress))
 
 		progress_bar=$(printf '%0.s|' $(seq 1 $progress))
 		progress_bar+=$(printf '%0.s.' $(seq 1 $remaind))
