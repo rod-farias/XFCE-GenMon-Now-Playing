@@ -13,7 +13,7 @@ Simple plugin that allows you to present playing music info in flat text mode an
 
 - It works only with media players that implement the MPRIS D-Bus interface. Virtually everyone does, or can be configured for it.
 - The host panel must be horizontal.
-- Ok, it's really not very fancy. If you know Qt, maybe you could create that beautiful plugin that we all want.
+- Ok, it's really not very fancy. Maybe you could create that beautiful plugin that we all want.
 
 ## Requirements
 
